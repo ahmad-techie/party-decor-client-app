@@ -163,6 +163,18 @@ span {
     }
 }
 
+.party{
+    font-family: 'Rubik Moonrocks', cursive;
+    font-size: 6em;
+    color: #1D7874;
+}
+
+@media (max-width: 600px){
+    .party{
+        font-size: 4em;
+    }
+}
+
 
 
 /*BALLOON 1 4*/
@@ -362,14 +374,3 @@ span {
 }
 
 
-.party{
-    font-family: 'Rubik Moonrocks', cursive;
-    font-size: 6em;
-    color: #1D7874;
-}
-
-@media (max-width: 600px){
-    .party{
-        font-size: 4em;
-    }
-}

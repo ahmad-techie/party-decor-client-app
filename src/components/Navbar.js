@@ -1,4 +1,4 @@
-import { CatchingPokemon, Celebration } from "@mui/icons-material";
+import { Celebration } from "@mui/icons-material";
 import { AppBar, Button, IconButton, Toolbar, Typography } from "@mui/material";
 import React from "react";
 

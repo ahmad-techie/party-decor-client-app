@@ -1,12 +1,9 @@
-import { Typography } from "@mui/material";
 import React from "react";
 import "./landing.css";
 function Landing() {
   return (
     <div class="container">
-      <Typography className="party" variant="h6">
-        Party
-      </Typography>
+      <h1 className="party">Party</h1>
       <div class="decor">
         <div>
           <span>D</span>
