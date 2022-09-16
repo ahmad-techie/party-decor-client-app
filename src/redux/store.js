@@ -2,7 +2,7 @@ import { createStore, combineReducers, compose, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
 
 const initialState = {
-  open: true,
+  open: false,
 };
 
 const quoteReducer = (state = initialState, action) => {
