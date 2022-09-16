@@ -20,8 +20,22 @@ const quoteReducer = (state = initialState, action) => {
   }
 };
 
+const initialMenuSate = true;
+
+const menuReducer = (state = initialMenuSate, action) => {
+  switch (action.type) {
+    case "OPEN_MENU":
+      return true;
+    case "CLOSE_MENU":
+      return false;
+    default:
+      return state;
+  }
+};
+
 const rootReducer = combineReducers({
   quote: quoteReducer,
+  menu: menuReducer,
 });
 
 const store = createStore(

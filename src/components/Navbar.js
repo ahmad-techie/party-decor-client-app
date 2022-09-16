@@ -1,15 +1,10 @@
 import { Celebration, Menu } from "@mui/icons-material";
-import {
-  AppBar,
-  Button,
-  IconButton,
-  Toolbar,
-  Typography,
-  Container,
-} from "@mui/material";
+import { AppBar, Button, IconButton, Toolbar, Typography } from "@mui/material";
 import React from "react";
+import { useDispatch } from "react-redux";
 
 function Navbar() {
+  const dispatch = useDispatch();
   return (
     <AppBar
       position="static"
@@ -25,7 +20,7 @@ function Navbar() {
           Party Decor
         </Typography>
         <Button color="inherit">
-          <Menu />
+          <Menu onClick={() => dispatch({ type: "OPEN_MENU" })} />
         </Button>
       </Toolbar>
     </AppBar>
