@@ -20,7 +20,7 @@ const quoteReducer = (state = initialState, action) => {
   }
 };
 
-const initialMenuSate = true;
+const initialMenuSate = false;
 
 const menuReducer = (state = initialMenuSate, action) => {
   switch (action.type) {
