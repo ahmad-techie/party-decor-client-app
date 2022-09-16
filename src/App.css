@@ -17,3 +17,13 @@ body{
 .logo{
   width: 60px;
 }
+
+#date{
+  width: 100%;
+  padding: 8.5px 14px;
+  font-size: 18px;
+  color: gray;
+  border: 1px solid rgb(171, 171, 171);
+  border-radius: 3px;
+  outline: blue;
+}

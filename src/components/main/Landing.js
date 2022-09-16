@@ -1,27 +1,38 @@
+import { Button, Typography } from "@mui/material";
 import React from "react";
+import Quote from "../quote/Quote";
 import "./landing.css";
+import { open } from "../../redux/actions";
+import { useDispatch } from "react-redux";
 function Landing() {
+  const dispatch = useDispatch();
   return (
-    <div class="container">
-      <h1 className="party">Party</h1>
-      <div class="decor">
-        <div>
-          <span>D</span>
-        </div>
-        <div>
-          <span>E</span>
-        </div>
-        <div>
-          <span>C</span>
-        </div>
-        <div>
-          <span>☺</span>
-        </div>
-        <div>
-          <span>R</span>
-        </div>
+    <main className="landing-wrapper">
+      <Typography id="title">Party Decor</Typography>
+      <Typography sx={{ color: "#ffcc00", fontSize: "2em" }} id="catch">
+        Let's make your party memorable!
+      </Typography>
+      <div className="img-container">
+        <img
+          className="landing-img"
+          src="./images/balloons.png"
+          alt="balloons"
+        />
+        <Button
+          onClick={() => dispatch(open())}
+          variant="contained"
+          className="btn-main"
+          id="btn-main"
+          sx={{
+            backgroundColor: "#F44926",
+            borderRadius: "1.5em",
+          }}
+        >
+          Get a Quote Now
+        </Button>
       </div>
-    </div>
+      <Quote />
+    </main>
   );
 }
 

@@ -1,5 +1,12 @@
-import { Celebration } from "@mui/icons-material";
-import { AppBar, Button, IconButton, Toolbar, Typography } from "@mui/material";
+import { Celebration, Menu } from "@mui/icons-material";
+import {
+  AppBar,
+  Button,
+  IconButton,
+  Toolbar,
+  Typography,
+  Container,
+} from "@mui/material";
 import React from "react";
 
 function Navbar() {
@@ -7,7 +14,7 @@ function Navbar() {
     <AppBar
       position="static"
       sx={{
-        backgroundColor: "#1D7874",
+        backgroundColor: "#762FCF",
       }}
     >
       <Toolbar>
@@ -17,7 +24,9 @@ function Navbar() {
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
           Party Decor
         </Typography>
-        <Button color="inherit">Contact Us</Button>
+        <Button color="inherit">
+          <Menu />
+        </Button>
       </Toolbar>
     </AppBar>
   );
